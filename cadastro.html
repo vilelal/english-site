@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Santana de Parnaíba</title>
+    <link rel="stylesheet" href="styleForm.css">
+
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="home.html" class="logo"><img src="img_News/logo.png" alt=""></a>
+
+        <nav class="cabecalho">
+            <a href="home.html" class="active">Home</a>
+            <a href="noticia.html">News</a>
+            <a href="">locates</a>
+            <a href="login.html">Login</a>
+            <a href="cadastro.html">sing up</a>
+        </nav>
+    </header>
+
+
+    <div class="form-container">
+        <form action="formulario.php" method="POST">
+            <fieldset>
+                <legend>
+                    <h2><b>Sing Up</b></h2>
+                </legend>
+                <br>
+                <div class="form-group">
+                    <input type="text" id="nome" name="nome" class="input" required>
+                    <label for="nome" class="label">Nome Completo:</label>
+
+                    <br><br>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" name="email" class="input" required>
+                    <label for="email" class="label">Email:</label>
+                    <br><br>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="senha" name="senha" class="input" required>
+                    <label for="senha" class="label">Password:</label>
+                    <br><br>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="telefone" name="telefone" class="input" required>
+                    <label for="telefone" class="label">Telefone:</label>
+
+                    <br><br>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="number" name="number" class="input" required>
+                    <label for="CPF" class="label">CPF:</label>
+
+                    <br><br>
+                </div>
+                <br><br>
+                <button type="submit" name="voltar" id="voltar">voltar</button>
+                <button type="submit" name="Submit" id="submit">Cadastrar</button>
+        </form>
+        </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(http://diariodealphaville.com.br/wordpress/wp-content/uploads/2020/11/igreja-matriz.A.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.header{
+    top: 0;
+    left: 0;
+    height: 10em;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.cabecalho a{
+    font-size: 20px;
+    color: #ededed;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.6s ease;
+}
+
+
+.cabecalho:after{
+    content:"";
+    position: absolute;
+    transition: 0.9;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    background-color: #DB7216;
+}
+
+.cabecalho a:hover,
+.cabecalho a.active,
+a:hover:after{
+    width: 100%;
+    color: #DB7216;;
+
+}
+.logo{
+    
+        max-width: 100px; /* Defina um tamanho máximo para a largura */
+        max-height: 50px; /* Defina um tamanho máximo para a altura */
+        height: auto; /* Mantém a proporção da imagem */
+}
+
+
+
+
+
+
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+      width: 50%; 
+    }
+
+}
+
+
+fieldset{
+    border: 2px solid #154bb8;
+}
+legend{
+    border: 1px solid blue;
+    text-align: center;
+    background-color: orange;
+    outline: none;
+    color: white;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.form-group{
+    position: relative;
+}
+
+.input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 15px;
+    outline: none;
+    color: white ;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input:focus ~ .label,
+.input:valid ~ .label{
+    top: -15px;
+    font-size: 12px;
+    color: orange;
+}
+
+#submit{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    width: 35%;
+    margin-left: 19%;
+    background-color: #154bb8;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+}
+#submit:hover{
+    background-color: rgb(6, 47, 131) ;
+}
+
+#voltar{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    width: 35%;
+    cursor: pointer;
+    margin-left: 5%;
+    background-color: #CCC;
+    transition: background-color 0.3s ease;
+}
+#voltar:hover{
+    background-color: rgba(0, 0, 0, 0.6) ;
+}
