@@ -61,16 +61,11 @@ a:hover:after{
     color: #DB7216;;
 
 }
-.logo{
-    
-        max-width: 100px; /* Defina um tamanho máximo para a largura */
-        max-height: 50px; /* Defina um tamanho máximo para a altura */
-        height: auto; /* Mantém a proporção da imagem */
-}
-
-
-
-
+ .logo {
+   
+        width: 30vh;
+        height: 10vh;
+ }
 
 
 .form-container{
