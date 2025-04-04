@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BMI Calculator</h2>
+        <p>Enter your weight (kg) and height (m)</p>
+        <input type="number" id="peso" placeholder="Weight (kg)" step="0.1">
+        <input type="number" id="altura" placeholder="Height (m)" step="0.01">
+        <button onclick="calcularIMC()">Calcular</button>
+        <div class="resultado" id="resultado"></div>
+    </div>
+    <script src="site.js"></script>
+</body>
+</html>
